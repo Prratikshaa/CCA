@@ -1,0 +1,108 @@
+{% extends 'header.html' %}
+<!-- {% load static %} -->
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+<!--- header div end -->
+<div class="container panel-wrap">
+  <div class="row panel-wrapper justify-content-center">
+    <div class="col-md-4">
+      <div class="panel">
+        <div class="img"><img style="height:260px; width:260px;" src="{% static '\images\img-1.jpeg' %}"/></div>
+        <div class="title">
+          <h1>Ayodhya</h1>
+        </div>
+        <div class="border"></div>
+        <div class="content">
+          <p>Ayodhya: Known as the birthplace of Lord Rama, Ayodhya is a sacred city with a rich historical and cultural legacy</p>
+          <div class="button-link"><a href="{% url 'blog' %}">readmore</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel">
+        <div class="img"><img style="height:260px; width:260px;" src="{% static '\images\img-2.jpeg' %}"/></div>
+        <div class="title">
+          <h1>THE TAJ MAHAL</h1>
+        </div>
+        <div class="border"></div>
+        <div class="content">
+          <p>The Taj Mahal, located in Agra, is a UNESCO World Heritage Site and one of the Seven Wonders of the World</p>
+          <div class="button-link"><a href="{% url 'blog' %}">readmore</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel">
+        <div class="img"><img style="height:260px; width:260px;" src="{% static '\images\img-3.jpeg' %}"/></div>
+        <div class="title">
+          <h1>KERALA</h1>
+        </div>
+        <div class="border"></div>
+        <div class="content">
+          <p>Kerala: Called "God's Own Country," Kerala is renowned for its backwaters, lush greenery, and vibrant traditions</p>
+          <div class="button-link"><a href="{% url 'blog' %}">readmore</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- panel wrap div end -->
+<div class="clearing"></div>
+<div class="page-wrap">
+  <div class="top-content">
+    <h1>Your go-to guide for unique travel stories, tips, and destination insights</h1>
+    <div class="top-border"></div>
+    <p>"Welcome to Travel Blog where we believe every journey is a story waiting to be told. Whether you’re planning your next adventure, seeking inspiration, or just want to travel through stories, we’re here to guide you. Join us as we explore breathtaking destinations, try unique experiences, and uncover the beauty of cultures around the world."
+    </p>
+    <div class="bottom-border"></div>
+    <div class="button-link"><a href="#">readmore</a></div>
+  </div>
+  <div class="page-wrapper">
+    <div class="primary-content marRight30 " style="width:100%;">
+      <div class="toppanel">
+        <div class="container">
+          <h1>Popular Blog Sections</h1>
+          <div class="border-bottom"></div>
+          <div class="container-wrap">
+            <div class="container-panel padBottom">
+              <div class="container-panel-left marRight20"><img src="{% static 'images/icon-1.png' %}"></div>
+              <div class="container-panel-right">
+                <h3>Destinations</h3>
+                <p style="color: #0c428d";">Quick links to blog posts on popular destinations </p>
+              </div>
+            </div>
+            <div class="container-panel borderNone marginTop">
+              <div class="container-panel-left marRight20"><img src="{% static 'images/icon-3.png' %}"></div>
+              <div class="container-panel-right">
+                <h3>Travel Tips & Advice/h3>
+                <p style="color: #0c428d";">Covering essentials, packing tips, travel budgeting, and solo travel advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-wrap borderNone">
+          <div class="container-panel marLeft20 padBottom">
+            <div class="container-panel-left marRight20"><img src="{% static 'images/icon-2.png' %}"></div>
+            <div class="container-panel-right">
+              <h3>Adventure & Outdoor</h3>
+              <p style="color: #0c428d";">Stories and tips on hiking trails, national parks, and outdoor adventures.
+              </p>
+            </div>
+          </div>
+          <div class="container-panel borderNone marginTop marLeft20">
+            <div class="container-panel-left marRight20"><img src="{% static 'images/icon-4.png' %}"></div>
+            <div class="container-panel-right">
+              <h3>Cultural Experiences</h3>
+              <p style="color: #0c428d";">Deep dives into local cultures, festivals, food traditions, and unique local insights.
+                .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+{% endblock content %}
